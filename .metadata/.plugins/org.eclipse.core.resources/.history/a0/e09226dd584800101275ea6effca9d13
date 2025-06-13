@@ -1,0 +1,34 @@
+package job.appscrip.utils;
+
+
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.StandardCopyOption;
+
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class ScrnShot {
+	
+	public void getScreenShot() {
+		WebDriver driver;
+		TakesScreenshot scrn = (TakesScreenshot)driver;
+		
+		File source =scrn.getScreenshotAs(OutputType.FILE);
+		File des = new File("C:\\Users\\acer\\Pictures\\SCRN\\"+driver.getTitle()+System.currentTimeMillis()+".png");
+		try {
+			Files.copy(source.toPath(), des.toPath(),StandardCopyOption.REPLACE_EXISTING);
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+		}
+	}
+	
+	
+
+
+
+}

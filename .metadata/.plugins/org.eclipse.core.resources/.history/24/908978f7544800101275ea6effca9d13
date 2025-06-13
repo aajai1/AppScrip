@@ -1,0 +1,28 @@
+package job.appscrip.test;
+
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Test;
+
+import job.appscrip.page.GooglePage;
+import job.appscrip.utils.BaseClass;
+
+public class SearchResult extends BaseClass {
+	
+	@Test
+	public void  search() {
+		GooglePage page = new GooglePage(driver);
+		page.searchField.sendKeys("OpenAI");
+		page.searchField.sendKeys(Keys.ENTER);
+		try {
+			Thread.sleep(10000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println(driver.getCurrentUrl());
+		
+	}
+	
+
+}

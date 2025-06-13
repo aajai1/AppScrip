@@ -1,0 +1,12 @@
+package job.appscrip.utils;
+
+import java.text.SimpleDateFormat;
+
+public class Time {
+
+	public void timeStamp() {
+		Long millis = System.currentTimeMillis();
+		String sdf = new SimpleDateFormat("dd-MM-yyyy_HH-mm-ss").format(millis);
+		
+	}
+}

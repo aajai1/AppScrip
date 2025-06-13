@@ -1,0 +1,9 @@
+package job.appscrip.utils;
+
+import org.openqa.selenium.TakesScreenshot;
+
+public class ScrnShot {
+	
+	TakesScreenshot scrnShot = (TakesScreenshot)driver;
+
+}

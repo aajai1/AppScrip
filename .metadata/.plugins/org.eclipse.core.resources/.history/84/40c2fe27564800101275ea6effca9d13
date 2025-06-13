@@ -1,0 +1,12 @@
+package job.appscrip.utils;
+
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+
+public class ScrnShot {
+WebDriver driver;
+	TakesScreenshot scrn = (TakesScreenshot) driver;
+
+
+
+}

@@ -1,0 +1,22 @@
+package job.appscrip.test;
+
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Test;
+
+import job.appscrip.page.GooglePage;
+import job.appscrip.utils.BaseClass;
+
+public class SearchResult extends BaseClass {
+	WebDriver driver;
+	GooglePage page = new GooglePage(driver);
+	
+	@Test
+	public void  search() {
+		page.searchField.sendKeys("OpenAI");
+		page.searchField.sendKeys(Keys.ENTER);
+		
+	}
+	
+
+}
