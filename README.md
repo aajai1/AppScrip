@@ -9,6 +9,6 @@ This project automates a simple Google search for the keyword **"OpenAI"** using
 - **Testing Framework**: TestNG  
 - **IDE**: Eclipse  
 - **Design Pattern**: Page Object Model (POM)
-  **I have Used Thread.sleep() in base Class,so that i can able to solve the Captcha within the duration.
+- **I have Used Thread.sleep() in base Class,so that i can able to solve the Captcha within the duration.
 
 
